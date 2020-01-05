@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-buttons slot="start">
+      <ion-back-button color="red" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <h1>&nbsp; Details</h1>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+
+
+
+  <h4 align="center">{{class}}</h4>
+  <h3 align="center">{{class_name}}</h3>
+  <canvas #doughnutCanvas></canvas>
+  <p align="center">Percentage: <u id="colorcheck">{{persent}}</u> %</p>
+  <ion-card>
+      <ion-card-content>
+        <ion-content  [scrollEvents]="true" id="con">
+              <ion-item *ngFor="let item of items;" lines="full" detail (click)="detailcheck(item.puredate,class)">
+                  <ion-label>
+                    <ion-text class="ion-text-wrap">
+                      <h2>{{item.class_date_check}}</h2>
+                    </ion-text>
+                    <ion-text>
+                      <h4>All Check: {{item.allcheck}} {{text}} Check: {{item.mycheck}}</h4>
+                      <p>Persentage: {{item.persent}} %</p>
+                    </ion-text>
+                  </ion-label>
+            
+                </ion-item>
+        </ion-content>
+      </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

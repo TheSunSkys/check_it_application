@@ -1,0 +1,69 @@
+<!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>Login</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+<br>
+<ion-content>
+  <div id="formreg">
+  <ion-list lines="full">
+    <ion-item >
+      <ion-label position="floating">
+        Student ID
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="username">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Password
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="password">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Confirm-Password
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="cpassword">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        First Name
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="fname">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Last Name
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="lname">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        E-mail
+      </ion-label>
+      <ion-input type="email" [(ngModel)]="email">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">
+        Phone
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="phone">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+</div>
+  <div id="btn">
+    <ion-button expand="block" pandding color="gold"  fill="outline" (click)="prosesRegister()">
+      Register
+    </ion-button>
+    <ion-button expand="block" pandding color="myblue" (click)="formLogin()">
+      Sign In
+    </ion-button>
+  </div>
+</ion-content>

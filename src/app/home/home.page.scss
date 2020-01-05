@@ -1,1 +1,37 @@
+#header {
+    text-align: center;
+}
+div{
+    color:white;
+    font-family: Lucida Console;
+}
+ion-content {
+    --ion-background-color: black;
+}
 
+// .ion-color-gold {
+//     --ion-color-base: var(--ion-color-gold) !important;
+//     --ion-color-base-rgb: var(--ion-color-gold-rgb) !important;
+//     --ion-color-contrast: var(--ion-color-gold-contrast) !important;
+//     --ion-color-contrast-rgb: var(--ion-color-gold-contrast-rgb) !important;
+//     --ion-color-shade: var(--ion-color-gold-shade) !important;
+//     --ion-color-tint: var(--ion-color-gold-tint) !important;
+// }
+
+// .ion-color-myblue {
+//     --ion-color-base: var(--ion-color-myblue) !important;
+//     --ion-color-base-rgb: var(--ion-color-myblue-rgb) !important;
+//     --ion-color-contrast: var(--ion-color-myblue-contrast) !important;
+//     --ion-color-contrast-rgb: var(--ion-color-myblue-contrast-rgb) !important;
+//     --ion-color-shade: var(--ion-color-myblue-shade) !important;
+//     --ion-color-tint: var(--ion-color-myblue-tint) !important;
+// }
+
+// :root {
+//     --ion-color-gold: #ffd700;
+//     --ion-color-gold-rgb: 255, 215, 0;
+//     --ion-color-gold-contrast: #000000;
+//     --ion-color-gold-contrast-rgb: 0, 0, 0;
+//     --ion-color-gold-shade: #e0bd00;
+//     --ion-color-gold-tint: #ffdb1a;
+// }

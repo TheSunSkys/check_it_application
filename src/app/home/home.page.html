@@ -1,14 +1,85 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Hello {{name}}
     </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button color="tertiary" (click)="prosesLogout()">
+        <ion-icon slot="end" name="log-out"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content fullscreen id="body">
+    <ion-grid>
+        <ion-row id="header">
+            <ion-col>
+                <ion-item>
+                    <ion-avatar slot="start" id="profile">
+                            <img src="" id="myProfile">
+                    </ion-avatar>
+                    <ion-label>
+                        <div>
+                            <h1>Welcome!</h1>
+                            <h3>{{status}} {{name}}.</h3>
+                        </div>
+
+                    </ion-label>
+                </ion-item>
+
+            </ion-col>
+        </ion-row>
+        <div id="menu">
+            <ion-row>
+                <ion-col id="col">
+                    <div>
+                        <ion-button expand="full" id="qr" color="light">
+                            <img src="./assets/img/QRcodeicon.png" style="height: 85%" (click)="scanCode()" >
+                        </ion-button>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <ion-button expand="full" id="data" color="light">
+                            <img src="./assets/img/Dataicon.png" style="height: 85%" (click)="dataInfo()">
+                        </ion-button>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <ion-button expand="full" id="table" color="light">
+                            <img src="./assets/img/Tableicon.png" style="height: 85%" (click)="tableSchedule()">
+                        </ion-button>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <ion-button expand="full" id="pro" color="light">
+                            <img src="./assets/img/Profileicon.png" style="height: 85%" (click)="myProfile()">
+                        </ion-button>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>
+                        <ion-button expand="full" id="setting" color="light">
+                            <img src="./assets/img/Settingicon.png" style="height: 85%" (click)="settings()">
+                        </ion-button>
+                    </div>
+                </ion-col>
+                <ion-col>
+                    <div>
+                        <ion-button expand="full" id="logout" color="light" (click)="prosesLogout()">
+                            <img src="./assets/img/Logouticon.png" style="height: 85%">
+                        </ion-button>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-grid>
 </ion-content>

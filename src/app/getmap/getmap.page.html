@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-buttons slot="start">
+      <ion-back-button color="red" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <h3>&nbsp; Check locate</h3>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="map-wrapper">
+    <!-- <div id="map_center">
+        <img src="../../assets/icon/center_marker.png" />
+      </div> -->
+    <div #map id="map"></div>
+  </div>
+  <div id="address">
+    <span>{{address}}</span>
+  </div>
+
+</ion-content>

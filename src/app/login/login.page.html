@@ -1,0 +1,37 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content  id="body" fullscreen>
+  <div>
+    <img src="./assets/Logo/fullLogoV3.png" id="logo">
+  </div>
+  <div id="formlog">
+  <ion-list lines="full" >
+    <ion-item style="color: white">
+      <ion-label position="floating">
+        Teacher ID/Student ID
+      </ion-label>
+      <ion-input type="text" [(ngModel)]="username">
+      </ion-input>
+    </ion-item>
+    <ion-item style="color: white">
+      <ion-label position="floating">
+        Password
+      </ion-label>
+      <ion-input type="password" [(ngModel)]="password">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+</div>
+    <div id="btn">
+      <ion-button  expand="block" pandding color="myblue" (click)="prosesLogin()">
+        Sing In
+      </ion-button>
+      <ion-button expand="block" pandding color="gold" fill="outline" (click)="formRegister()">
+        Register
+      </ion-button>
+    </div>
+</ion-content>

@@ -1,0 +1,46 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>checkit</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+<ion-content fullscreen id="body">
+  <ion-header>
+    <ion-toolbar color="black">
+      <ion-buttons slot="start">
+        <ion-back-button color="red" defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <div id="btn" style="margin-top:5%">
+    <ion-button expand="block" pandding color="red" (click)="opencamera()">
+      <ion-icon ios="ios-camera" md="md-camera"></ion-icon>
+    </ion-button>
+  </div>
+  <!-- <p align="center"><img src="" id="itches" (click)="presentPopover($event)"></p> -->
+  <p align="center" >
+    <img src=""  id="takephoto" style="background-color: white">
+    <!-- <img [src]="currentImage" *ngIf="currentImage" id="takephoto"> -->
+  </p>
+  <!-- <p id="default" align="center">
+    <img src="./assets/img/takephoto.png" id="img">
+  </p> -->
+  <div id="map">
+    <ion-button expand="block" pandding color="gold" (click)="getLocation()">
+      <ion-icon ios="ios-locate" md="md-locate"></ion-icon>
+    </ion-button>
+  </div>
+  <br>
+  <div id="yourlocate">
+    <h3 id="address"></h3>
+  </div>
+  <div id="btn">
+    <ion-button expand="block" pandding color="green" (click)="checkkkkk()">
+      <ion-icon ios="ios-cloud-done" md="md-cloud-done"></ion-icon>
+    </ion-button>
+  </div>
+  <p id="tttt" style="color:white;"></p>
+
+
+</ion-content>

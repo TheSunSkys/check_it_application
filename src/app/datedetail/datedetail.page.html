@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="black">
+    <ion-buttons slot="start">
+      <ion-back-button color="red" defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <h5>&nbsp;{{date}}</h5>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <ion-card *ngFor="let item of items;">
+    <ion-item lines="full">
+      <ion-label>
+        <p align="center">
+          <img src=""
+            id="{{item.photo}}">
+        </p>
+        <br>
+        <ion-text>
+          <h3>Check time : {{item.time}}</h3>
+        </ion-text>
+      </ion-label>
+    </ion-item>
+    <ion-card-content>
+      <p>Address : {{item.address}}</p>
+      <p align="center">
+        <ion-button size="small" color="red"
+          (click)="getMap(item.lat,item.lng)">
+          <ion-icon ios="ios-map" md="md-map"></ion-icon>&nbsp; Maps
+        </ion-button>
+      </p>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
