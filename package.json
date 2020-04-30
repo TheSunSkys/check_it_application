@@ -48,7 +48,7 @@
     "cordova-plugin-nativegeocoder": "^3.2.2",
     "core-js": "^2.5.4",
     "ionic-angular": "^3.9.8",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "phonegap-plugin-barcodescanner": "^8.1.0",
     "rxjs": "^6.5.2",
     "rxjs-compat": "^6.5.2",
